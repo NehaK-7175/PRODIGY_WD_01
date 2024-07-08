@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<section>
+    <div class="circle"></div>
+    <header>
+        <a href="#"><img src="logo.png" class="logo"></a>
+        <ul>
+            <a href="index.html" class="button">Home</a>
+            <a href="Drinks.html" class="button">Drinks</a>
+            <a href="food.html" class="button">Food</a>
+            <a href="best.html" class="button">Bestsellers</a>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="textBox">
+            <h2>IT'S NOT JUST COFFEE<br>IT'S <span>STARBUCKS</span></h2>
+            <p>As it has been from the beginning, our purpose goes far beyond profit. We believe Starbucks can, and should, have a positive impact on the communities we serve.Our aspiration is to be people positive – investing in humanity and the well-being of everyone we connect with, from our partners to coffee farmers to the customers in our stores and beyond.
+            </p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="imgBox">
+            <img src="Cimg-1.png" class="starbucks">
+        </div>
+    </div>
+    <ul class="thumb">
+      <li><img src="Simg-1.png" onclick="imgSlider('Cimg-1.png')"></li>  
+      <li><img src="Simg-2.png" onclick="imgSlider('Cimg-2.png')"></li> 
+      <li><img src="Simg-3.png" onclick="imgSlider('Cimg-3.png')"></li> 
+    </ul>
+   
+</section>
+
+<script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.starbucks').src = anything;
+    }
+</script>
+
+</body>
+</html>
